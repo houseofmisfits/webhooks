@@ -19,14 +19,6 @@
   schedule:
     type: weekly
     days:
-      - Wednesday
-      - Saturday
-    time: "14:30"
-- message: "#wellness_reminder#"
-  webhook: aspen_general
-  schedule:
-    type: weekly
-    days:
       - Saturday
       - Sunday
       - Monday

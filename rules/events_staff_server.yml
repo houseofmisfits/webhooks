@@ -1,14 +1,2 @@
-staff_event_toastme:
-  - "Hey #staffserver_mod# team! Toast Me is now over! Please collect all the IDs from #ch_toastme# - then put them in #ch_cake_disp# and ping an Admin."
-
-staff_event_reframing:
-  - "Hey #staffserver_mod# team! The Reframing event is now over! Please collect all the IDs from #ch_reframing# - then put them in #ch_cake_disp# and ping an Admin."
-
-staff_event_gratitude:
-  - "Hey #staffserver_mod# team! The Gratitude event is now over! Please collect all the IDs from #ch_gratitude# - then put them in #ch_cake_disp# and ping an Admin."
-
-staff_event_creativity:
-  - "Hey #staffserver_mod# team! The Creativity event is now over! Please collect all the IDs from #ch_creativity# - then put them in #ch_cake_disp# and ping an Admin."
-
-staff_event_achievements:
-  - "Hey #staffserver_mod# team! The Achievement event is now over! Please collect all the IDs from #ch_achievements# - then put them in #ch_cake_disp# and ping an Admin."
+staff_event_cake_reminder:
+  - "Hey #staffserver_mod# team! #var_event# is now over! Please collect all the IDs from #var_ch# - then put them in #ch_cake_disp# and ping an Admin."

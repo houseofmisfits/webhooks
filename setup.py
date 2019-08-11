@@ -6,9 +6,10 @@ with open('requirements.txt') as f:
 setup(
     name='HoM-PoC',
     version='0.0.1',
-    packages=['houseofmisfits'],
+    packages=['houseofmisfits', 'houseofmisfits.test'],
     install_requires=requirements,
     license='Proprietary',
+    test_suite='houseofmisfits.test',
     classifiers=[
         'License :: Other/Proprietary License'
     ]

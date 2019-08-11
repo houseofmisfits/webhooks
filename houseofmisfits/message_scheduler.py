@@ -3,7 +3,6 @@ from datetime import date, timedelta, datetime, time
 
 import yaml
 import logging
-from pytz import timezone
 
 from houseofmisfits import Message
 
@@ -55,12 +54,11 @@ class MessageScheduler:
             html_file.write(content)
 
     def run_pending(self):
-        tz = timezone('US/Eastern')
         if date.today() > self.date:
             self.refresh()
             self.date = date.today()
         for message in self.messages:
-            if datetime.now(tz=tz) >= message.scheduled_time:
+            if datetime.now() >= message.scheduled_time:
                 logger.info("Sending message with {}: {}".format(message.webhook_name, message.message))
                 message.send()
                 self.messages.remove(message)
@@ -85,13 +83,12 @@ class MessageScheduler:
 
     def schedule_hourly(self, message):
         logger.debug('Setting message {} to hourly schedule'.format(message['message']))
-        tz = timezone('US/Eastern')
-        start_time = datetime.combine(self.date, time(0, 0, 0), tzinfo=tz)
+        start_time = datetime.combine(self.date, time(0, 0, 0))
         interval = message['schedule']['interval']
         webhook = message['webhook']
         unflat_text = message['message']
         for message_time in (start_time + timedelta(hours=n) for n in range(0, 24, interval)):
-            if datetime.now(tz=tz) > message_time:
+            if datetime.now() > message_time:
                 logger.debug('Skipping message {}: already past {}'.format(unflat_text, message_time.isoformat()))
                 continue
             new_message = Message(webhook, unflat_text, self.rules, message_time)
@@ -99,20 +96,18 @@ class MessageScheduler:
 
     def schedule_minutely(self, message):
         logger.debug('Setting message {} to minutely schedule'.format(message['message']))
-        tz = timezone('US/Eastern')
-        start_time = datetime.combine(self.date, time(0, 0, 0), tzinfo=tz)
+        start_time = datetime.combine(self.date, time(0, 0, 0))
         interval = message['schedule']['interval']
         webhook = message['webhook']
         unflat_text = message['message']
         for message_time in (start_time + timedelta(minutes=n) for n in range(0, 1440, interval)):
-            if datetime.now(tz=tz) > message_time:
+            if datetime.now() > message_time:
                 logger.debug('Skipping message {}: already past {}'.format(unflat_text, message_time.isoformat()))
                 continue
             new_message = Message(webhook, unflat_text, self.rules, message_time)
             self.messages.append(new_message)
 
     def schedule_weekly(self, message):
-        tz = timezone('US/Eastern')
         day_of_week = weekdays[self.date.weekday()]
         webhook = message['webhook']
         unflat_text = message['message']
@@ -120,8 +115,8 @@ class MessageScheduler:
             dt = self.date
             h, m = message['schedule']['time'].split(':')
             tm = time(int(h), int(m))
-            message_time = datetime.combine(dt, tm, tzinfo=tz)
-            if datetime.now(tz=tz) > message_time + timedelta(minutes=15):
+            message_time = datetime.combine(dt, tm)
+            if datetime.now() > message_time + timedelta(minutes=15):
                 logger.debug('Skipping message {}: already past {}'.format(unflat_text, message_time.isoformat()))
                 return
             new_message = Message(webhook, unflat_text, self.rules, message_time)
