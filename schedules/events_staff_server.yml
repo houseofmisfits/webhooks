@@ -6,14 +6,6 @@
       - Monday
     time: "18:00"
 
-- message: "#[var_event:The Reframing event][var_ch:#ch_reframing#]staff_event_cake_reminder#"
-  webhook: staff_mod_chat
-  schedule:
-    type: weekly
-    days:
-      - Wednesday
-    time: "18:00"
-
 - message: "#[var_event:The gratitude event][var_ch:#ch_gratitude#]staff_event_cake_reminder#"
   webhook: staff_mod_chat
   schedule:
@@ -22,7 +14,15 @@
       - Tuesday
     time: "18:00"
 
-- message: "#[var_event:The gratitude event][var_ch:#ch_creativity#]staff_event_cake_reminder#"
+- message: "#[var_event:The Reframing event][var_ch:#ch_reframing#]staff_event_cake_reminder#"
+  webhook: staff_mod_chat
+  schedule:
+    type: weekly
+    days:
+      - Wednesday
+    time: "18:00"
+
+- message: "#[var_event:The creativity event][var_ch:#ch_creativity#]staff_event_cake_reminder#"
   webhook: staff_mod_chat
   schedule:
     type: weekly
