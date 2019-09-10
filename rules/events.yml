@@ -5,6 +5,12 @@ announce_toastme_begin:
 announce_toastme_end:
   - Toast Me has ended. Cake will be awarded shortly. Thank you for participating and see you next Monday for Toast Me!!
 
+mark_toastme_begin:
+  - "Toast Me event starts now\n-------------------------------"
+
+mark_toastme_end:
+  - Toast Me event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!
+
 
 # Cognitive Reframing Event
 announce_reframing_begin:
