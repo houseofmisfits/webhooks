@@ -15,7 +15,7 @@ Edit these files and commit to new branches, then submit pull requests for those
 Messages are built using [Tracery](http://tracery.io) by GalaxyKate. Check out the 
 [tutorial](http://www.crystalcodepalace.com/traceryTut.html) to learn more.
 
-The Jenkins server (where the code runs) can be accessed at https://homjenkins.heckin.io.
+The Jenkins server (where the code runs) can be accessed at https://jenkins.misfits.house.
 
 ## How it works
 
@@ -24,13 +24,14 @@ The Jenkins server (where the code runs) can be accessed at https://homjenkins.h
 The House of Misfits webhooks system runs on the following technologies:
 
  - GitHub (you are here! - stores the code)
- - Jenkins (pulls and runs the code from GitHub)
- - Python (the language telling the computer how to do things)
- - YAML ("language" rules are written in)
- - Tracery (framework for making text dynamic and more human)
+ - Jenkins (downloads all the code from GitHub)
+ - Docker (runs the code)
+ - Python (the code)
+ - Tracery (Python library that uses rules to generate sentences)
+ - YAML (format the rules are written in)
 
-Every day at midnight (EST), the Jenkins server creates a new schedule for messages for the day, pulling the
-`master` branch from this repository if there is any updates to the rules files, etc.
+Whenever a pull request (described below) is put into the `master` branch, GitHub notifies our Jenkins server that there
+is new code to download. Once Jenkins is done downloading the code, it sends it to Docker, which 
 
 ### Schedules
 
@@ -78,8 +79,18 @@ schedule:
   type: minutely
   interval: 2 # or other integer
 ```
+
+ - **random**: sends a message at random intervals, defined in `minutes_apart_range`
+ ```yaml
+schedule:
+    type: random
+    start_time: "06:00"  # HH:MM in EST 
+    # This is the earliest a message can appear.
+    end_time: "22:00"  # HH:MM in EST
+    minutes_apart_range: 15-120
+```
  
-If another type is needed, [file an issue](https://github.com/pacorain/houseofmisfits/issues/new).
+If another type is needed, [file an issue](https://github.com/houseofmisfits/webhooks/issues/new).
 
 
 
@@ -107,10 +118,12 @@ Once you've made all of the changes you think you need, you can move on to submi
 If you're more comfortable editing the files on your computer and can use your terminal/command prompt, that's also an
 option.
 
-1. Download the repository; do `git clone https://github.com/pacorain/houseofmisfits.git`. 
+You need to have GIT SCM installed (pre-installed on most non-Windows machines).
+
+1. Download the repository; do `git clone https://github.com/houseofmisfits/webhooks.git`. 
   - Note: If you have two-step verification turned on, you will need to 
     [set up SSH](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) and clone with `git 
-    clone git@github.com:pacorain/houseofmisfits.git` instead.
+    clone git@github.com:houseofmisfits/webhooks.git` instead.
 2. Go into the repository (`cd houseofmisfits`) and make a new branch to draft your changes onto (`git checkout -b 
 my-super-cool-branch-name`).
 3. Make your changes in a text editor of your choosing.
@@ -126,10 +139,10 @@ Once you've pushed to your branch and you're satisfied with your changes, you ca
 If you will be changing the code or want to run the code to test rules, I recommend the PyCharm IDE. There
 are, of course, other IDEs you can use, but I'm going to provide instructions on using PyCharm.
 
-First, import a project from source control, and open `https://github.com/pacorain/houseofmisfits.git`
+First, import a project from source control, and open `https://github.com/houseofmisfits/webhooks.git`
   - Note: If you have two-step verification turned on, you will need to 
     [set up SSH](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) and clone with `git 
-    clone git@github.com:pacorain/houseofmisfits.git` instead.
+    clone git@github.com:houseofmisfits/webhooks.git` instead.
 
 When cloning the project, be sure to set up a virtual environment. The defaults *should* be okay, as long as you're
 not using the main Python interpreter.
@@ -159,19 +172,5 @@ Two things are required before you can merge your pull request:
  - Someone else must approve your changes
  - The automatic tests must pass (for example: if you forgot a colon `:` when defining a rule, it will fail.)
  
-Once this is done, anyone can merge the pull request into master, and the changes will be applied the next day.
-
-
-### Prioritizing changes
-
-As mentioned above, the server is set up to pull code every 24 hours. It's recommended that changes be planned in time
-for this process to complete correctly.
-
-If a change needs to be applied before midnight, you will need to rebuild it with the Jenkins server. Note that this
-might cause some unexpected behavior.
-
-On homjenkins.heckin.io, navigate to [webhooks](https://homjenkins.heckin.io/job/webhooks/). Click `Build with 
-Parameters`, and enter the required parameters (or review them--the defaults are probably fine).
-
-Once you click Build, the server will force stop the running process, re-pull the code, and try to start running it 
-again.
+Once this is done, anyone can merge the pull request into master, and the changes will be applied as soon as the merge 
+is complete.
