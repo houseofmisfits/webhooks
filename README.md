@@ -31,7 +31,8 @@ The House of Misfits webhooks system runs on the following technologies:
  - YAML (format the rules are written in)
 
 Whenever a pull request (described below) is put into the `master` branch, GitHub notifies our Jenkins server that there
-is new code to download. Once Jenkins is done downloading the code, it sends it to Docker, which 
+is new code to download. Once Jenkins is done downloading the code, it sends it to Docker, which creates a container and 
+replaces the existing container.
 
 ### Schedules
 
@@ -92,7 +93,13 @@ schedule:
  
 If another type is needed, [file an issue](https://github.com/houseofmisfits/webhooks/issues/new).
 
+### Docker
 
+Docker is an independent container platform. It allows code to be run as if it's running on it's own server, without 
+requiring a full server or resource-intensive virtual machine to be set up. This makes it super easy to run multiple 
+environments and test the code in a different server, or to run it locally without a ton of set up.
+
+To see the Docker containers that are currently running for House of Misfits, head over to https://admin.misfits.house.
 
 ## Making changes
 
