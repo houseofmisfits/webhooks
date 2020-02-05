@@ -133,6 +133,8 @@ class MessageScheduler:
         schedule = message['schedule']
         if 'days' in schedule and weekdays[self.date.weekday()] not in schedule['days']:
             return
+        if 'end_date' in schedule and schedule['end_date'] <= self.date:
+            return
         start_time = datetime.combine(self.date, time.fromisoformat(schedule['start_time']))
         end_time = datetime.combine(self.date, time.fromisoformat(schedule['end_time']))
         min_interval, max_interval = (int(mins) * 60 for mins in schedule['minutes_apart_range'].split('-'))

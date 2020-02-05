@@ -13,3 +13,4 @@
     start_time: "06:00"
     end_time: "22:00"
     minutes_apart_range: 30-240
+    end_date: 2020-02-15
