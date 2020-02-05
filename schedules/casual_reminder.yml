@@ -5,3 +5,11 @@
     start_time: "06:00"
     end_time: "22:00"
     minutes_apart_range: 15-120
+
+- message: "#happy_letters#"
+  webhook: aspen_general
+  schedule:
+    type: random
+    start_time: "06:00"
+    end_time: "22:00"
+    minutes_apart_range: 30-240
