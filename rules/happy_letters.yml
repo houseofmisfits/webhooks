@@ -1,3 +1,24 @@
 happy_letters:
+  - "#casual_reminder_intro# #happy_letter_sentence#"
+  - "#casual_reminder_intro# #happy_letter_sentence# #casual_reminder_outro#"
+  - "#happy_letter_sentence# #casual_reminder_outro#"
+  - "#happy_letter_sentence#"
+  - "#happy_letter_sentence#"
+
+happy_letter_sentence:
+  - "Did you know you can #send_happy_letter#? #happy_letter_instruction.capitalize#."
   - "Want to say something nice, encouraging, positive, or wholesome to another member but don't want to come off creepy or initiate awkward conversation? Send them an anonymous happy letter at http://bit.ly/HoMhappynotes"
   - "You can send friendly, anonymous messages to others on this server! Check out the form on http://bit.ly/HoMhappynotes."
+
+
+send_happy_letter:
+  - "let #hl_someone# on the server know how much you appreciate them?"
+
+hl_someone:
+  - a friend
+  - a fellow HoMie
+  - someone
+  - your favorite person
+
+happy_letter_instruction:
+  - visit the form on http://bit.ly/HoMhappynotes to send a message
