@@ -94,17 +94,16 @@ meds_do:
 
 meds_done:
   - taken your meds
-  - taken your pills
   - taken all your vitamins
   - remembered to take your prescriptions
   - kept up with your prescriptions
   - kept up with all your mental health habits
 
 meds_noun:
-  - "[var_is:are]your daily pills"
+  - "[var_is:are]your daily meds"
   - "[var_is:are]your prescriptions"
   - "[var_is:are]meds"
-  - "[var_is:is]medication"
+  - "[var_is:is]your medication"
   - "[var_is:are]vitamins"
   - "[var_is:are]vitamins and supplements"
   - "[var_is:is]taking your prescribed medication"
@@ -114,6 +113,7 @@ meds_suggestion:
   - pretend your medications are health potions before you embark on your daily quest
   - have someone close to you ask you about them every day
   - set a reminder on your phone
+  - use a medication tracker app
 
 
 exercise_do:
