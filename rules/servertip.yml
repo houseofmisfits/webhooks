@@ -73,5 +73,12 @@ servertip_cognitive_reframing:
   - "Have you checked your thoughts lately? Try the template on #ch_reframing# if you need some guidance!"
 
 servertip_pronoun_role:
-  - Being misgendered is no fun, so be sure to check a persons roles before referring to them as He/She/They!
-  - "Did you know you can set your roles in the #ch_roles# channel? This includes setting your preferred pronouns"
+  - "Being misgendered is no fun, so be sure to #pronoun_role_do#!"
+  - "Did you know you can #pronoun_role_do#?"
+
+pronoun_role_do:
+  - check a person's roles before referring to them as he/she/they
+  - be aware of someones preferred pronouns when referring to them by checking their roles
+  - "set your preferred pronouns in the #ch_roles# channel"
+
+
