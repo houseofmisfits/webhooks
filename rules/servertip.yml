@@ -15,6 +15,7 @@ servertip_sentence:
   - "#servertip_helpdesk#"
   - "#servertip_cognitive_reframing#"
   - "#servertip_pronoun_role#"
+  - "#happy_letters#"
 
 servertip_donate:
   - "If you would like to donate to House of Misfits, #donate_instructions#"
