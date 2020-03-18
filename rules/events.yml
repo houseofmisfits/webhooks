@@ -96,7 +96,7 @@ gratitude_outro:
   - Let's all share some gratitude!
 
 announce_gratitude_end:
-  - "Gratutide event has ended, if you participated you will receive your cake shortly, hope you were able to spread some gratitude!"
+  - "Gratitude event has ended, if you participated you will receive your cake shortly, hope you were able to spread some gratitude!"
 
 mark_gratitude_begin:
   - "Gratitude event starts now\n--------------------------"
