@@ -2,6 +2,7 @@ casual_reminder:
   - "#servertip#"
   - "#wellness#"
   - "#shitpost#"
+  - "#compliment#"
 
 casual_reminder_intro:
   - Hey!
@@ -15,7 +16,6 @@ casual_reminder_intro:
   - "We interrupt your chat to bring you an important message:"
   - Hello, there!
   - Just checking in.
-  - omg, have you heard?
   - Howdy, friends!
   - hey, friends.
 
