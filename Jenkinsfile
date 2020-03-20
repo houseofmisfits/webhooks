@@ -17,6 +17,7 @@ pipeline {
         WEBHOOKS_FILE = credentials('9adeeae1-50f8-4f8c-afac-b18df7d8b031')
       }
       steps {
+        sh 'rm -rf webhooks.yml'
         sh 'cp $WEBHOOKS_FILE webhooks.yml'
         sh 'docker-compose down'
         sh 'docker-compose up -d'
@@ -30,6 +31,7 @@ pipeline {
         WEBHOOKS_FILE = credentials('20c14f11-b6b2-441b-93e9-4bdcf8795eb1')
       }
       steps {
+        sh 'rm -rf webhooks.yml'
         sh 'cp $WEBHOOKS_FILE webhooks.yml'
         sh 'docker-compose down'
         sh 'docker-compose up -d'
