@@ -1,27 +1,3 @@
-- message: "#[var_event:Toast Me][var_ch:#ch_toastme#]staff_event_cake_reminder#"
-  webhook: staff_mod_chat
-  schedule:
-    type: weekly
-    days:
-      - Monday
-    time: "18:00"
-
-- message: "#[var_event:The gratitude event][var_ch:#ch_gratitude#]staff_event_cake_reminder#"
-  webhook: staff_mod_chat
-  schedule:
-    type: weekly
-    days:
-      - Tuesday
-    time: "18:00"
-
-- message: "#[var_event:The achievements event][var_ch:#ch_achievements#]staff_event_cake_reminder#"
-  webhook: staff_mod_chat
-  schedule:
-    type: weekly
-    days:
-      - Friday
-    time: "18:00"
-
 - message: "#staff_event_happy_letters_reminder#"
   webhook: staff_mod_chat
   schedule:
