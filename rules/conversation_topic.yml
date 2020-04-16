@@ -2,7 +2,7 @@ conversation_topic:
   - "What is #conversation_noun_phrase#?"
   - "Not sure what to talk about? What about #conversation_noun_phrase#!"
   - "Conversation topic idea: #conversation_noun_phrase.capitalize#"
-  - "Tell me about #conversation_noun_topic#!"
+  - "Tell me about #conversation_noun_phrase#!"
   - "#conversation_question.capitalize#?"
   - "I was wondering, #conversation_question#?"
   - "#conversation_question.capitalize#?"
