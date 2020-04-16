@@ -1,0 +1,103 @@
+conversation_topic:
+  - "What is #conversation_noun_phrase#?"
+  - "Not sure what to talk about? What about #conversation_noun_phrase#!"
+  - "Conversation topic idea: #conversation_noun_phrase.capitalize#"
+  - "Tell me about #conversation_noun_topic#!"
+  - "#conversation_question.capitalize#?"
+  - "I was wondering, #conversation_question#?"
+  - "#conversation_question.capitalize#?"
+  - "#conversation_question.capitalize#?"
+  - "#conversation_other#"
+
+conversation_noun_phrase:
+  - "your favorite #likeable_category#"
+  - "a #likeable_category# that your life would be different without"
+  - something you do to get rid of stress
+  - something you are obsessed with
+  - the most useful thing you own
+  - your perfect weekend
+  - something you're particularily excited about
+  - the funniest thing you think has happened to you
+  - "something you do when you're #conversation_emotion#"
+  - one of your hobbies, and why you think you've taken to it
+  - something cool you've learned recently
+  - a random skill you have
+  - someone in your life who brings you joy
+  - something that has impacted the person you are today
+  - one of your quirks
+  - something you *always* have to have with you
+  - how *you* measure your success
+  - the silliest fear you've ever heard of
+  - something on your bucket list
+  - something you are really good at
+
+conversation_question:
+  - what three words best describe you
+  - "what would be your perfect #time_or_event#"
+  - if you were to talk to your younger self, what would you say and what advice would you give yourself
+  - how's the weather where you're at
+  - if you were to start your own business, what kind of business would it be
+  - if you could make life more like video games in one way, what would it be
+  - if you could spend a day as one fictional character, who would it be?
+  - what message would you send if you could send a message to yourself 20 years in the future
+  - "how do you think your life will be different in #future_years# years"
+  - if you had to change your name, what would your new name be
+  - what you think the best period of your life will be
+  - what is the silliest fear you've ever heard of
+  - which game show do you think you're most likely to win
+  - "what is a song you listen to when you're #conversation_emotion#"
+
+conversation_other:
+  - If you could have a conversation with any one person for an hour, who would it be? What would you talk about?
+  - Has anyone ever been trapped in an elevator?
+
+likeable_category:
+  - food
+  - memory
+  - animal
+  - dessert
+  - self-care activity
+  - story
+  - candy
+  - video game
+  - treat
+  - restaurant
+  - talking tree bot
+  - hobby
+  - mob in Minecraft
+  - book
+  - song
+  - artist
+  - season
+  - podcast episode
+  - video
+  - meme format
+
+time_or_event:
+  - day
+  - weekend
+  - week
+  - vacation
+  - date
+  - birthday party
+  - field trip or work outing
+  - house
+
+future_years:
+  - 5
+  - 10
+  - 10
+  - 10
+  - 15
+  - 20
+  - 12
+  - a few
+  - 7
+  - 40
+  - 2,000
+
+conversation_emotion:
+  - bored
+  - stressed
+  - anxious
+  - in need of hope
