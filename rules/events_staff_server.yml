@@ -1,5 +1,5 @@
 staff_event_cake_reminder:
-  - "#[role_to_ping:#staff_mod#]ping_role# #var_event# #ended# #collect#"
+  - "#[role_to_ping:#staff_asper#]ping_role# #var_event# #ended# #collect#"
 
 ended:
   - "is now #synonym_over#."
@@ -8,7 +8,7 @@ synonym_over:
   - over
 
 collect:
-  - "Please ensure that all participants have received the participant role, then ping Admin in #ch_cake_disp#"
+  - "Please ensure that all participants have received the participant role, then give the cake to everyone in #ch_cake_disp#"
 
 staff_event_happy_letters_reminder:
   - "#[role_to_ping:#staff_mod#]ping_role# Don't forget to check for any new Happy Letters!"
