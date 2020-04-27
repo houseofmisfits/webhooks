@@ -1,5 +1,5 @@
 staff_event_cake_reminder:
-  - "#[role_to_ping:#staff_asper#]ping_role# #var_event# #ended# #collect#"
+  - "#[role_to_ping:#staff_asper#]ping_person# #var_event# #ended# #collect#"
 
 ended:
   - "is now #synonym_over#."

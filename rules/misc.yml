@@ -1,2 +1,5 @@
 ping_role:
   - "Hey #role_to_ping# team!"
+
+ping_person:
+  - "Hey #role_to_ping#!"
