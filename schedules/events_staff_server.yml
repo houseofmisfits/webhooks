@@ -3,30 +3,9 @@
   schedule:
     type: weekly
     days:
-      - Sunday
-      - Monday
-      - Tuesday
       - Wednesday
-      - Thursday
-      - Friday
       - Saturday
-      - The Lord's Day
-    time: "06:00"
-
-- message: "#staff_event_happy_letters_reminder#"
-  webhook: staff_mod_chat
-  schedule:
-    type: weekly
-    days:
-      - Sunday
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-      - Saturday
-      - The Lord's Day
-    time: "18:00"
+    time: "14:00"
 
 - message: "#[var_event:Toast Me][var_ch:#ch_toastme#]staff_event_cake_reminder#"
   webhook: staff_mod_chat
