@@ -29,7 +29,7 @@
     time: "18:00"
 
 - message: "#[var_event:Toast Me][var_ch:#ch_toastme#]staff_event_cake_reminder#"
-  webhook: staff_mod_chat
+  webhook: cake_dispensary
   schedule:
     type: weekly
     days:
@@ -37,7 +37,7 @@
     time: "18:00"
 
 - message: "#[var_event:The gratitude event][var_ch:#ch_gratitude#]staff_event_cake_reminder#"
-  webhook: staff_mod_chat
+  webhook: cake_dispensary
   schedule:
     type: weekly
     days:
@@ -45,7 +45,7 @@
     time: "18:00"
 
 - message: "#[var_event:The cognitive reframing event][var_ch:#ch_reframing#]staff_event_cake_reminder#"
-  webhook: staff_mod_chat
+  webhook: cake_dispensary
   schedule:
     type: weekly
     days:
@@ -53,7 +53,7 @@
     time: "18:00"
 
 - message: "#[var_event:The creativity event][var_ch:#ch_creativity#]staff_event_cake_reminder#"
-  webhook: staff_mod_chat
+  webhook: cake_dispensary
   schedule:
     type: weekly
     days:
@@ -61,7 +61,7 @@
     time: "18:00"
 
 - message: "#[var_event:The achievements event][var_ch:#ch_achievements#]staff_event_cake_reminder#"
-  webhook: staff_mod_chat
+  webhook: cake_dispensary
   schedule:
     type: weekly
     days:
