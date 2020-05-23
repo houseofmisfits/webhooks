@@ -1,0 +1,19 @@
+{
+  "embeds": [
+    {
+      "title": "__Commands__",
+      "description": "bot commands with their specific parameter options, the format is 'parameter:type' so that you can see what to put in each command and in what order",
+      "color": 388176,
+      "fields": [
+        { "name": "-mute", 
+            "value": "Mute 'User:Mention/ID' 'Duration:Duration' 'Reason:Text'\nMute 'User:Mention/ID' 'Reason:Text' 'Duration:Duration'\nMute 'User:Mention/ID' 'Reason:Text'" },
+        { "name": "-unmute", 
+            "value": "Unmute 'User:Mention/ID' [Reason:Text]" },
+        { "name": "-ban", 
+            "value": "Ban 'User:Mention/ID' [Reason:Text]\n\n[-d Duration:Duration]\n[-ddays Days:Whole number]" },
+        { "name": "-clean", 
+            "value": "Clean 'Num:Whole number'\nClean 'Num:Whole number' 'User:Mention/ID'\nClean 'User:Mention/ID' 'Num:Whole number'\n\n[-r Regex:Text]\n[-ma Max age:Duration]\n[-minage Min age:Duration]\n[-i Regex case insensitive:Switch]\n[-nopin Ignore pinned messages:Switch]" }
+      ]
+    }
+  ]
+}
