@@ -19,8 +19,8 @@ servertip_sentence:
   - "#servertip_animated_emoji#"
 
 servertip_donate:
-  - "If you would like to donate to House of Misfits, #donate_instructions#"
-  - "Did you know that you can get cake by donating to House of Misfits? #donate_instructions.capitalize#"
+  - "If you would like to donate to Kintsugi Crossroads, #donate_instructions#"
+  - "Did you know that you can get cake by donating to Kintsugi Crossroads? #donate_instructions.capitalize#"
   - "Donations play a big part in making this server a haven for mental health. If you want to contribute, #donate_instructions#"
 
 donate_instructions:
@@ -52,7 +52,7 @@ cake_earn:
   - "You can earn cake by gambling it in #ch_botspam#. Be careful though, it's just as easy to lose it."
   - We have events every weekday that allow you to earn cake.
   - Toriel will occasionally drop some here. Don't worry, it's safe if you follow the 5-second rule.
-  - You can even earn it if you have some spare change to donate to House of Misfits!
+  - You can even earn it if you have some spare change to donate to Kintsugi Crossroads!
 
 cake_spend:
   - "You can spend your cake in the #ch_botspam# channel. To see what's available, use the `.shop` command."
@@ -133,7 +133,7 @@ animated_emoji_sentence:
   - "#animated_emoji_addendum# To help with this, it's important#var_not# to #servertip_emoji_do#."
 
 animated_emoji_addendum:
-  - We want to keep House of Misfits a fun and safe environment for all our users.
+  - We want to keep Kintsugi Crossroads a fun and safe environment for all our users.
   - There are lots of people on the server, and some of them can have issues when exposed to flashing images.
   - Everyone deserves to be able to chat on HoM!
   - Y'all are doing a great job at making this a great chat for everyone!

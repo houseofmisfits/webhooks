@@ -16,7 +16,7 @@ def run():
     Runs the main program loop that schedules messages and checks for messages to be sent every second.
     """
     try:
-        logger.info("House of Misfits Webhooks Daemon started.")
+        logger.info("Kintsugi Crossroads Webhooks Daemon started.")
         chat_bot = Chatbot()
         while True:
             chat_bot.eval()
