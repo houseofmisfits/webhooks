@@ -1,5 +1,5 @@
 - message: "#staff_event_happy_letters_reminder#"
-  webhook: staff_mod_chat
+  webhook: cake_dispensary
   schedule:
     type: weekly
     days:
