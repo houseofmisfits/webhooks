@@ -1,7 +1,7 @@
-# House of Misfits Webhook Repository
+# Kintsugi Crossroads Webhook Repository
 
 This is the Python script and the underlying rules files, that control all of the scheduled webhooks
-for the Discord server House of Misfits.
+for the Discord server Kintsugi Crossroads.
 
 ## Quickstart / Links
 
@@ -21,7 +21,7 @@ The Jenkins server (where the code runs) can be accessed at https://jenkins.misf
 
 ### The Stack
 
-The House of Misfits webhooks system runs on the following technologies:
+The Kintsugi Crossroads webhooks system runs on the following technologies:
 
  - GitHub (you are here! - stores the code)
  - Jenkins (downloads all the code from GitHub)
@@ -99,7 +99,7 @@ Docker is an independent container platform. It allows code to be run as if it's
 requiring a full server or resource-intensive virtual machine to be set up. This makes it super easy to run multiple 
 environments and test the code in a different server, or to run it locally without a ton of set up.
 
-To see the Docker containers that are currently running for House of Misfits, head over to https://admin.misfits.house.
+To see the Docker containers that are currently running for Kintsugi Crossroads, head over to https://admin.misfits.house.
 
 ## Making changes
 
