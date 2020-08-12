@@ -23,14 +23,6 @@
       - Tuesday
     time: "18:00"
 
-- message: "#[var_event:The cognitive reframing event][var_ch:#ch_reframing#]staff_event_cake_reminder#"
-  webhook: cake_dispensary
-  schedule:
-    type: weekly
-    days:
-      - Wednesday
-    time: "18:00"
-
 - message: "#[var_event:The creativity event][var_ch:#ch_creativity#]staff_event_cake_reminder#"
   webhook: cake_dispensary
   schedule:
