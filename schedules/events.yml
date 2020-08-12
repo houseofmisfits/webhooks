@@ -14,37 +14,6 @@
       - Monday
     time: "18:00"
 
-# Reframing
-- message: "#announce_reframing_begin#"
-  webhook: announcements
-  schedule:
-    type: weekly
-    days:
-      - Wednesday
-    time: "06:00"
-- message: "#announce_reframing_end#"
-  webhook: announcements
-  schedule:
-    type: weekly
-    days:
-      - Wednesday
-    time: "18:00"
-- message: "#mark_reframing_begin#"
-  webhook: cognitive_reframing
-  schedule:
-    type: weekly
-    days:
-      - Wednesday
-    time: "06:00"
-- message: "#mark_reframing_end#"
-  webhook: cognitive_reframing
-  schedule:
-    type: weekly
-    days:
-      - Wednesday
-    time: "18:00"
-
-
 # Gratitude
 - message: "#announce_gratitude_begin#"
   webhook: announcements
