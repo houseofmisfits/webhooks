@@ -116,11 +116,11 @@ hl_compliment:
   - how they've impacted your life
 
 happy_letter_instruction:
-  - visit the form on http://bit.ly/HoMhappynotes to send a message
-  - send them an anonymous happy letter at http://bit.ly/HoMhappynotes
-  - check out the form on http://bit.ly/HoMhappynotes
-  - head to http://bit.ly/HoMhappynotes
-  - "click this link: http://bit.ly/HoMhappynotes"
+  - visit the form on https://forms.gle/RmLEzzTzJfDLZUmS8 to send a message
+  - send them an anonymous happy letter at https://forms.gle/RmLEzzTzJfDLZUmS8
+  - check out the form on https://forms.gle/RmLEzzTzJfDLZUmS8
+  - head to https://forms.gle/RmLEzzTzJfDLZUmS8
+  - "click this link: https://forms.gle/RmLEzzTzJfDLZUmS8"
 
 servertip_animated_emoji:
   - "#[var_not: not][servertip_emoji_do:overuse the animated emoji on the server]animated_emoji_sentence#"

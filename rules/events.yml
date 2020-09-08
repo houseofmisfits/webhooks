@@ -87,7 +87,7 @@ announce_gratitude_begin:
   - "#[event_name:Gratitude][event_ping:#ping_gratitude#][day_of_week:Tuesday][event_instructions:#gratitude_instructions#][event_doing:#gratitude_doing#][event_outro:#gratitude_outro#]announce_event_begin#"
 
 gratitude_instructions:
-  - "Between 6am EST - 6pm EST, head on over to #ch_gratitude# and post something/ping someone that you're grateful for!"
+  - "Between 10am UTC - 10pm UTC, head on over to #ch_gratitude# and post something/ping someone that you're grateful for!"
 
 gratitude_doing:
   - finding things to be grateful for
@@ -110,7 +110,7 @@ announce_creativity_begin:
   - "#[event_name:Creativity][event_ping:#ping_creativity#][day_of_week:Thursday][event_instructions:#creativity_instructions#][event_doing:#creativity_doing#][event_outro:#creativity_outro#]announce_event_nocake_begin#"
 
 creativity_instructions:
-  - "Between 6am EST - 6pm EST, head on over to #ch_creativity# and post a piece of artwork or another creation you made!"
+  - "Between 10am UTC - 10pm UTC, head on over to #ch_creativity# and post a piece of artwork or another creation you made!"
 
 creativity_doing:
   - sharing your creations
@@ -136,7 +136,7 @@ announce_achievements_begin:
   - "#[event_name:Achievements][event_ping:#ping_achievements#][day_of_week:Friday][event_instructions:#achievements_instructions#][event_doing:#achievements_doing#][event_outro:#achievements_outro#]announce_event_begin#"
 
 achievements_instructions:
-  - "Between 6am EST - 6pm EST, head on over to #ch_achievements# and post a goal or something else you've achieved!"
+  - "Between 10am UTC - 10pm UTC, head on over to #ch_achievements# and post a goal or something else you've achieved!"
 
 achievements_doing:
   - celebrating your achievements
