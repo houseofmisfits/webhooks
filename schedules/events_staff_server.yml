@@ -1,10 +1,12 @@
 - message: "#staff_event_happy_letters_reminder#"
-  webhook: cake_dispensary
+  webhook: staff_mod_chat
   schedule:
     type: weekly
     days:
+      - Monday
       - Wednesday
-      - Saturday
+      - Friday
+      - Sunday
     time: "14:00"
 
 - message: "#[var_event:Toast Me][var_ch:#ch_toastme#]staff_event_cake_reminder#"
