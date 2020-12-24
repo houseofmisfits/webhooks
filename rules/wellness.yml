@@ -7,10 +7,10 @@ wellness:
   - "#casual_reminder_intro# #wellness_classic#"
   - "#casual_reminder_intro# #wellness_classic# #casual_reminder_outro#"
   - "#wellness_dynamic#"
-  - "#wellness_dynamic#"
-  - "#wellness_dynamic#"
-  - "#wellness_dynamic#"
-  - "#wellness_dynamic#" # put multiple times to make this more likely
+#  - "#wellness_dynamic#"
+#  - "#wellness_dynamic#"
+#  - "#wellness_dynamic#"
+#  - "#wellness_dynamic#" # put multiple times to make this more likely
   - "#wellness_classic# #casual_reminder_outro#"
   - "#wellness_dynamic# #casual_reminder_outro#"
   - "#wellness_dynamic# #casual_reminder_outro#"
@@ -26,16 +26,16 @@ wellness:
 
 wellness_classic:
   - Everybody take a minute to drink a glass of water. That's all. And if you forgot to take your meds today, this is your reminder.
-  - Your reminder to drink water! If you hate water, put some fruit in it or add a splash of juice or water flavorer.
-  - Do you take vitamins or supplements for your health? Don't forget to take them today and keep your body healthy.
-  - Get up and do a little exercise. Stretch, go for a 10-minute walk, do some jumping jacks - get your blood pumping. A little goes a long way. The server will still be here when you come back.
+ # - Your reminder to drink water! If you hate water, put some fruit in it or add a splash of juice or water flavorer.
+ # - Do you take vitamins or supplements for your health? Don't forget to take them today and keep your body healthy.
+ # - Get up and do a little exercise. Stretch, go for a 10-minute walk, do some jumping jacks - get your blood pumping. A little goes a long way. The server will still be here when you come back.
   - You matter a lot and your mental health is important. Make sure you take care of yourself, even when that involves doing things you don't want to do.
 
 wellness_dynamic:
-  - "#[var_do:#water_do#][var_done:#water_done#][var_noun:#water_noun#][var_suggestion:#water_suggestion#]wellness_sentence#"
-  - "#[var_do:#meds_do#][var_done:#meds_done#][var_noun:#meds_noun#][var_suggestion:#meds_suggestion#]wellness_sentence#"
-  - "#[var_do:#exercise_do#][var_done:#exercise_done#][var_noun:#exercise_noun#][var_suggestion:#exercise_suggestion#]wellness_sentence#"
-  - "#[var_do:#breathe_do#][var_done:#breathe_done#][var_noun:#breathe_noun#][var_suggestion:#breathe_suggestion#]wellness_sentence#"
+#  - "#[var_do:#water_do#][var_done:#water_done#][var_noun:#water_noun#][var_suggestion:#water_suggestion#]wellness_sentence#"
+ - "#[var_do:#meds_do#][var_done:#meds_done#][var_noun:#meds_noun#][var_suggestion:#meds_suggestion#]wellness_sentence#"
+#  - "#[var_do:#exercise_do#][var_done:#exercise_done#][var_noun:#exercise_noun#][var_suggestion:#exercise_suggestion#]wellness_sentence#"
+#  - "#[var_do:#breathe_do#][var_done:#breathe_done#][var_noun:#breathe_noun#][var_suggestion:#breathe_suggestion#]wellness_sentence#"
 
 wellness_sentence:
   - "Make sure you #var_do# every once in a while!"
@@ -48,54 +48,54 @@ wellness_sentence:
   - "#var_do.capitalize# today!"
 
 
-water_do:
-  - drink some water
-  - drink enough water throughout your day
-  - get plenty to drink
-  - stay hydrated
-  - hydrate
-  - get something to drink
-  - "`I N G E S T   H 2 O`"
-  - drink water
-  - keep your body hydrated
-  - get plenty to eat and drink
-  - take care of your body
-  - check your thirst
+# water_do:
+#   - drink some water
+#   - drink enough water throughout your day
+#   - get plenty to drink
+#   - stay hydrated
+#   - hydrate
+#   - get something to drink
+#   - "`I N G E S T   H 2 O`"
+#   - drink water
+#   - keep your body hydrated
+#   - get plenty to eat and drink
+#   - take care of your body
+#   - check your thirst
 
-water_done:
-  - drunk enough water
-  - had enough water
-  - had any water
-  - had enough to drink
-  - kept yourself hydrated
-  - made sure to get pleny to eat and drink
+# water_done:
+#   - drunk enough water
+#   - had enough water
+#   - had any water
+#   - had enough to drink
+#   - kept yourself hydrated
+#   - made sure to get pleny to eat and drink
 
-water_noun:
-  - "[var_is:is]water"
-  - "[var_is:is]getting at least 8 cups of water"
-  - "[var_is:is]hydration"
-  - "[var_is:is]your water intake"
-  - "[var_is:is]drinking enough water"
-  - "[var_is:is]getting enough to drink"
+# water_noun:
+#   - "[var_is:is]water"
+#   - "[var_is:is]getting at least 8 cups of water"
+#   - "[var_is:is]hydration"
+#   - "[var_is:is]your water intake"
+#   - "[var_is:is]drinking enough water"
+#   - "[var_is:is]getting enough to drink"
 
-water_suggestion:
-  - download an app that helps you keep track of your water intake
-  - add fruit or flavor enhancer to your water
-  - get a larger water bottle and set a goal to drink all of it each day
-  - set a reminder on your phone
+# water_suggestion:
+#   - download an app that helps you keep track of your water intake
+#   - add fruit or flavor enhancer to your water
+#   - get a larger water bottle and set a goal to drink all of it each day
+#   - set a reminder on your phone
 
 
 meds_do:
   - take your meds
   - take medication
-  - take your daily vitamins and supplements
+#   - take your daily vitamins and supplements
   - follow your prescriptons
   - keep up with your mental health habits
 
 meds_done:
   - taken your meds
   - taken your pills
-  - taken all your vitamins
+#   - taken all your vitamins
   - remembered to take your prescriptions
   - kept up with your prescriptions
   - kept up with all your mental health habits
@@ -116,68 +116,68 @@ meds_suggestion:
   - set a reminder on your phone
 
 
-exercise_do:
-  - move around
-  - stand up and move around
-  - stretch your muscles
-  - get some fresh air
-  - go outside
-  - take a walk
+# exercise_do:
+#   - move around
+#   - stand up and move around
+#   - stretch your muscles
+#   - get some fresh air
+#   - go outside
+#   - take a walk
 
-exercise_done:
-  - gone outside
-  - moved around
-  - streched your muscles
-  - gone somewhere
-  - gotten any fresh air
-  - taken a break
+# exercise_done:
+#   - gone outside
+#   - moved around
+#   - streched your muscles
+#   - gone somewhere
+#   - gotten any fresh air
+#   - taken a break
 
-exercise_noun:
-  - "[var_is:is]moving your body"
-  - "[var_is:is]stretching your muscles"
-  - "[var_is:is]exercising"
-  - "[var_is:is]stepping away from your phone and computer"
-  - "[var_is:are]the outdoors"
-  - "[var_is:is]taking breaks"
-  - "[var_is:is]staying active"
-  - "[var_is:is]activity"
+# exercise_noun:
+#   - "[var_is:is]moving your body"
+#   - "[var_is:is]stretching your muscles"
+#   - "[var_is:is]exercising"
+#   - "[var_is:is]stepping away from your phone and computer"
+#   - "[var_is:are]the outdoors"
+#   - "[var_is:is]taking breaks"
+#   - "[var_is:is]staying active"
+#   - "[var_is:is]activity"
 
-exercise_suggestion:
-  - grab some headphones and hang out in voice chat while you move around
-  - do just a quick exercise, like jumping jacks or curls, to get your blood pumping
-  - set a timer and try to move around for that time
-  - take the long route the next time you get up to go somewhere
+# exercise_suggestion:
+#   - grab some headphones and hang out in voice chat while you move around
+#   - do just a quick exercise, like jumping jacks or curls, to get your blood pumping
+#   - set a timer and try to move around for that time
+#   - take the long route the next time you get up to go somewhere
 
 
-breathe_do:
-  - practice deep breathing
-  - breathe
-  - focus on your breathing
-  - be aware of your thoughts
-  - focus on your thinking
-  - notice your posture
+# breathe_do:
+#   - practice deep breathing
+#   - breathe
+#   - focus on your breathing
+#   - be aware of your thoughts
+#   - focus on your thinking
+#   - notice your posture
 
-breathe_done:
-  - breathed
-  - taken some deep breaths
-  - practiced focusing on your breath
-  - noticed your thoughts
-  - taken a moment to relax
-  - checked your thoughts
+# breathe_done:
+#   - breathed
+#   - taken some deep breaths
+#   - practiced focusing on your breath
+#   - noticed your thoughts
+#   - taken a moment to relax
+#   - checked your thoughts
 
-breathe_noun:
-  - "[var_is:is]your breathing"
-  - "[var_is:is]being aware of how your body and how you are feeling"
-  - "[var_is:is]being aware of your thoughts"
-  - "[var_is:is]being aware of your feelings"
-  - "[var_is:is]self-awareness"
-  - "[var_is:is]taking some time to relax"
-  - "[var_is:is]taking some time to breathe"
-  - "[var_is:is]stepping away for a moment"
-  - "[var_is:is]giving yourself a rest"
+# breathe_noun:
+#   - "[var_is:is]your breathing"
+#   - "[var_is:is]being aware of how your body and how you are feeling"
+#   - "[var_is:is]being aware of your thoughts"
+#   - "[var_is:is]being aware of your feelings"
+#   - "[var_is:is]self-awareness"
+#   - "[var_is:is]taking some time to relax"
+#   - "[var_is:is]taking some time to breathe"
+#   - "[var_is:is]stepping away for a moment"
+#   - "[var_is:is]giving yourself a rest"
 
-breathe_suggestion:
-  - "type `.breathe` in #ch_botspam# to get a helpful animation"
-  - download a meditation app
-  - set a timer for 30 seconds and try to focus on one specific feeling
-  - "take some time to find one negative thought, then try to improve it in #ch_reframing#"
+# breathe_suggestion:
+#   - "type `.breathe` in #ch_botspam# to get a helpful animation"
+#   - download a meditation app
+#   - set a timer for 30 seconds and try to focus on one specific feeling
+#   - "take some time to find one negative thought, then try to improve it in #ch_reframing#"
