@@ -11,9 +11,9 @@ collect:
   - "Please ensure that all participants have received the participant role, then give the cake to everyone in #ch_cake_disp#"
 
 staff_event_happy_letters_reminder:
-  - "#[role_to_ping:#staff_mod#]ping_role# Don't forget to check for any new Happy Letters!"
-  - "#[role_to_ping:#staff_mod#]ping_role# There may be some new Happy Letters, waiting to be sent!"
-  - "#[role_to_ping:#staff_mod#]ping_role# First person to send out Happy Letters gets cake. Well...basically cake. You get the satisfaction of sending notes to make peoples' days. That's just like cake."
+  - "#staff_mod# Don't forget to check for any new Happy Letters!"
+  - "#staff_mod# There may be some new Happy Letters, waiting to be sent!"
+  - "#staff_mod# First person to send out Happy Letters gets cake. Well...basically cake. You get the satisfaction of sending notes to make peoples' days. That's just like cake."
   - "Is there any #staff_mod# out there willing to check for Happy Letters?"
-  - "#[role_to_ping:#staff_mod#]ping_role# This is your reminder to check for new Happy Letters!"
-  - "#[role_to_ping:#staff_mod#]ping_role# Are there any new Happy Letters?"
+  - "#staff_mod# This is your reminder to check for new Happy Letters!"
+  - "#staff_mod# Are there any new Happy Letters?"

@@ -16,7 +16,6 @@ conversation_noun_phrase:
   - "your favorite #likeable_category#"
   - "your #likeable_category# of choice"
   - "a #likeable_category# that your life would be different without"
-  - something you do to get rid of stress
   - something you are obsessed with
   - the most useful thing you own
   - your perfect weekend
@@ -30,8 +29,6 @@ conversation_noun_phrase:
   - something that has impacted the person you are today
   - one of your quirks
   - something you *always* have to have with you
-  - how *you* measure your success
-  - the silliest fear you've ever heard of
   - something on your bucket list
   - something you are really good at
   - something about your pet that you think makes them unique
@@ -57,7 +54,6 @@ conversation_question:
   - "how do you think your life will be different in #future_years# years"
   - if you had to change your name, what would your new name be
   - what you think the best period of your life will be
-  - what is the silliest fear you've ever heard of
   - which game show do you think you're most likely to win
   - "what is a song you listen to when you're #conversation_emotion#"
   - "if you had to give up one #likeable_category# for the rest of your life, what would you choose"
@@ -67,11 +63,6 @@ conversation_other:
   - If you could have a conversation with any one person for an hour, who would it be? What would you talk about?
   - What?
   - Why?
-  - What is one thing you want to be unique about your funeral?
-  - What is one trait you hope your kids will never inherit?
-  - How would you survive the zombie apocalypse?
-  - You've done it. You've achieved world domination. Every government is at your command. What's the first thing you do?
-  - What is the last step in your plan to achieve world domination?
   - What's the highest thing you've ever climbed?
   - Have any of you ever broken a bone?
 
