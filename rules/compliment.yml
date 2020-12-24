@@ -7,7 +7,6 @@ compliment:
   - "Always remember what #adjective_mod.a# #compliment_noun# you are."
   - "Never forget how #adjective_mod# you are."
   - "Your daily reminder that you are #adjective_mod.a# #compliment_noun#."
-  - "Whoever says you're not #adjective_mod.a# #compliment_noun#, can #do_unpleasant_thing#."
   - "Hey! Hey you! You're #adjective_mod.a# #compliment_noun#!"
   - "I hope you know how great you are. You're #adjective_mod.a# #compliment_noun#."
   - "Read this if you're #adjective_mod.a# #compliment_noun#."
@@ -56,7 +55,6 @@ compliment_adjective:
   - beguiling
   - kind
   - good-natured
-  - magnanimous
   - bright
   - dazzling
   - lustrous
@@ -64,28 +62,19 @@ compliment_adjective:
   - creative
 
 compliment_noun:
-  - warhorse
   - unicorn
   - being
-  - human
   - "embodiment of all that is #syn_good_revered#"
   - fucker
   - delight
   - genius
   - creature
-  - human being
   - individual
   - piece of hotness
-  - nugget
-  - loaded potato
-  - nerd
   - bitch
   - egg
   - queen
   - hamster fart
-  - pickle
-  - Jedi
-  - Sith Lord
   - goblin
   - goddess
   - harold
@@ -99,11 +88,3 @@ syn_good_revered:
   - fucking awesome
   - awesome
   - upstanding
-  - Post Malone
-
-do_unpleasant_thing:
-  - suck on a wet fart
-  - fall off a cliff
-  - just log off
-  - face my mighty banhammer
-  - choke on my paws
