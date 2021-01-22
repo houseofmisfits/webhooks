@@ -13,6 +13,20 @@
     days:
       - Monday
     time: "18:00"
+ - message: "#mark_toastme_end#"
+  webhook: toast_me
+  schedule:
+    type: weekly
+    days:
+      - Monday
+    time: "06:00"
+- message: "#mark_toastme_begin#"
+  webhook: toast_me
+  schedule:
+    type: weekly
+    days:
+      - Monday
+    time: "18:00"
 
 # Gratitude
 - message: "#announce_gratitude_begin#"
